@@ -1,0 +1,205 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: #1f2937;
+    background: #f8fafc;
+}
+
+/* Header and Navigation */
+
+header {
+    background: #0f172a;
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 0.5rem 0.75rem;
+    border-radius: 0.4rem;
+}
+
+nav a:hover {
+    background: #2563eb;
+}
+
+/* Keyboard Accessibility */
+
+nav a:focus-visible,
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+    outline: 3px solid #f59e0b;
+    outline-offset: 3px;
+}
+
+/* Main Content */
+
+main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 3rem 1.5rem;
+}
+
+/* Sections */
+
+section {
+    background: #ffffff;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 14px rgba(15, 23, 42, 0.08);
+}
+
+/* Headings */
+
+h1 {
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    color: #0f172a;
+    margin-top: 0;
+}
+
+h2 {
+    color: #1d4ed8;
+    margin-top: 0;
+}
+
+/* Text */
+
+p {
+    max-width: 70ch;
+}
+
+/* Links */
+
+main a {
+    color: #1d4ed8;
+    font-weight: 600;
+}
+
+main a:hover {
+    color: #1e40af;
+}
+
+/* Lists */
+
+ul {
+    padding-left: 1.5rem;
+}
+
+li {
+    margin-bottom: 0.5rem;
+}
+
+/* Contact Form */
+
+form {
+    max-width: 650px;
+}
+
+form div {
+    margin-bottom: 1.25rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.4rem;
+    font-weight: 700;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 0.8rem 1rem;
+    border: 2px solid #cbd5e1;
+    border-radius: 0.5rem;
+    font: inherit;
+    background: #ffffff;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #2563eb;
+}
+
+textarea {
+    resize: vertical;
+}
+
+/* Button */
+
+button {
+    border: 0;
+    background: #2563eb;
+    color: #ffffff;
+    padding: 0.85rem 1.25rem;
+    border-radius: 0.5rem;
+    font: inherit;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #1d4ed8;
+}
+
+/* Footer */
+
+footer {
+    background: #0f172a;
+    color: #ffffff;
+    text-align: center;
+    padding: 1.5rem;
+}
+
+footer p {
+    margin: 0 auto;
+}
+
+/* Mobile Responsive Design */
+
+@media (max-width: 600px) {
+
+    header {
+        padding: 1rem;
+    }
+
+    nav {
+        gap: 0.5rem;
+    }
+
+    nav a {
+        padding: 0.45rem 0.6rem;
+    }
+
+    main {
+        padding: 2rem 1rem;
+    }
+
+    section {
+        padding: 1.25rem;
+    }
+}
